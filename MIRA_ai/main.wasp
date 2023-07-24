@@ -1,0 +1,11 @@
+app MIRA_ai {
+  wasp: {
+    version: "^0.11.1"
+  },
+  title: "MIRA_ai"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import Main from "@client/MainPage.jsx"
+}
